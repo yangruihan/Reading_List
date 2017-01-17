@@ -2,9 +2,10 @@
 记录阅读者阅读计划、阅读进度以及书籍评分
 
 # 参与阅读者
-- C.y.(yangruihan)
-- fanyong(fanyonga)
-- liuchuang(addliu)
+- [C.y.(yangruihan)](https://github.com/yangruihan)
+- [fanyong(fanyonga)](https://github.com/fanyonga)
+- [liuchuang(addliu)](https://github.com/addliu)
+- [BearSmall(bearsmall)](https://github.com/bearsmall)
 
 # 阅读计划
 ## 2017
