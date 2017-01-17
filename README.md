@@ -6,6 +6,7 @@
 - [fanyong(fanyonga)](https://github.com/fanyonga)
 - [liuchuang(addliu)](https://github.com/addliu)
 - [BearSmall(bearsmall)](https://github.com/bearsmall)
+- [SmileHr(SmileHr)](https://github.com/SmileHr)
 
 # 阅读计划
 ## 2017
