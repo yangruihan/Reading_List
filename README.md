@@ -16,6 +16,7 @@
 |       《算法导论》        | 17%  | 2017-1-17 | 2017-1-17 | liuchuang |
 |     _500lines_      |  3%  | 2017-1-10 | 2017-1-15 | liuchuang |
 | 《Spring In Action 中文第四版》 |  10%  | 2017-1-12 | 2017-1-17 | BearSmall |
+| 《Spring MVC 学习指南》 |  0%  | 2017-1-17 | 2017-1-17 | BearSmall |
 
 # 分类
 ## 算法
@@ -32,6 +33,7 @@
 
 ## Java框架
 - 《Spring In Action 中文第四版》 BearSmall
+- 《Spring MVC 学习指南》 BearSmall
 
 [500lines]:https://github.com/aosabook/500lines
 
