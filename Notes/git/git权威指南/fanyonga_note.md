@@ -22,13 +22,13 @@ patch B < diff.txt # 使用差异文件diff.txt和原文件B恢复目标文件A
 ### 2.CVS的工作原理
 采用**C/S**架构，版本库位于服务端，实质是**RCS**文件容器。每个**RCS**文件的文件名以",v"结尾，用于存储对应文件的历次变更历史。详细结构如下图所示：
 
-![图1：CVS版本控制系统示意图](/img/cvs-arch.png)
+![图1：CVS版本控制系统示意图](/Notes/git/git权威指南/img/cvs-arch.png)
 
 ### 3.SVN的工作原理
 
 SVN的每一次提交，都会在服务器端的db/revs和db/revprops目录下各自创建一个以#+顺序数字命名的文件，用以记录此次更新的内容。（M--修改，A--添加，D--删除）
 
-![图2：CVS版本控制系统示意图](/img/svn-arch.png)
+![图2：CVS版本控制系统示意图](/Notes/git/git权威指南/img/svn-arch.png)
 
 ###  本日小结 2017-01-18
 
