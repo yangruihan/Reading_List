@@ -8,24 +8,32 @@
 >* 我想，除了Spring官网上一千多页的Spring参考手册以及Spring源码，这本Spring In Action也是很值得我们去细细品读的。
 
 ## 目录
+
 ### 第一部分 Spring和核心
+
 1.  第一章：Spring之旅
 2.  第二章：装配Bean
 3.  第三章：高级装配
 4.  第四章：面向切面的Spring
+
 ### 第二部分 Web中的Spring
+
 5.  第五章：构建Spring Web应用
 6.  第六章：渲染Web视图
 7.  第七章：Spring MVC的高级技术
 8.  第八章：使用Spring Web Flow
 9.  第九章：保护Web应用
+
 ### 第三部分 后端中的Spring
+
 10. 第十章： 通过Spring和JDBC征服数据库
 11. 第十一章：使用对象-关系映射持久化数据
 12. 第十二章：使用NoSQL数据库
 13. 第十三章：缓存数据
 14. 第十四章：保护方法应用
+
 ### 第四部分 Spring集成
+
 15. 第十五章：使用远程服务
 16. 第十六章：使用Spring MVC创建REST API
 17. 第十七章：Spring消息
