@@ -102,7 +102,7 @@
         * 为Groovy开发的应用程序提供了更加顺畅的编程体验。
         * 添加了条件化创建bean的功能，在这里只有开发人员定义的条件满足的时候，才会创建所声明的bean。
         * Spring4.0包含了Spring的RestTemplate的一个新的异步实现，它会立即返回并且允许在操作完成后执行回调。
-        * 添加了多项对JEE规范的支持，包括JMS2.0、JPA2.1、和bean validation 1.1
+        * 添加了多项对JEE规范的支持，包括JMS2.0、JPA2.1、和bean validation 1.1。
 
 #### 每天小结
 
