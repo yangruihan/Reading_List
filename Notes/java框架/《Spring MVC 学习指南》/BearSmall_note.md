@@ -34,7 +34,7 @@
 1. 除了通过类的构造器方式，Spring还同样支持通过调用一个工厂的方法来初始化类。下面的bean定义展示了通过工厂方法来
 实例化java.util.Calendar。
     ```
-    <bean id="Calendar" class="java.util.Calendar" factory-method="getInstance/>
+    <bean id="Calendar" class="java.util.Calendar" factory-method="getInstance"/>
     ```
 
 2. 除了通过名称传递参数外，Spring还支持通过指数方式传递参数，具体如下：
