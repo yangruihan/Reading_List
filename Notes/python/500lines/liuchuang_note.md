@@ -40,4 +40,38 @@ context = {'user_name': 'addliu', 'product_list': [{'name': 'iPhone', 'price': 6
 </ul>
 ```
 
-**核心思想**：将模板解析成一个字符串`code`，字符串内容是一个python的**函数** (函数名为：`_render_function`) ，然后用`exec(code, namespace)`执行该函数并返回`namespace`，最终由外层类调用`namespace`下的`_render_function`得到最终的静态文本。
+**核心思想**：将模板解析成一个字符串`code`，字符串内容是一个python的**函数** (函数名为：`_render_function`) ，然后用`exec(code, namespace)`执行该函数的定义并返回`namespace`，最终由外层类调用`namespace`下的`_render_function`得到最终的静态文本。
+
+> `code`字符串里面的函数定义如下：
+>
+> ```python
+> def render_function(context, do_dots):
+>     c_user_name = context['user_name']
+>     c_product_list = context['product_list']
+>     c_format_price = context['format_price']
+>
+>     result = []
+>     append_result = result.append
+>     extend_result = result.extend
+>     to_str = str
+>
+>     extend_result([
+>         '<p>Welcome, ',
+>         to_str(c_user_name),
+>         '!</p>\n<p>Products:</p>\n<ul>\n'
+>     ])
+>     for c_product in c_product_list:
+>         extend_result([
+>             '\n    <li>',
+>             to_str(do_dots(c_product, 'name')),
+>             ':\n        ',
+>             to_str(c_format_price(do_dots(c_product, 'price'))),
+>             '</li>\n'
+>         ])
+>     append_result('\n</ul>\n')
+>     return ''.join(result)
+> ```
+>
+> 外层传入参数，调用该函数就能获取解析后的静态字符串。
+>
+> 注：该**模板**解析的字符串并不局限于`html`文本
