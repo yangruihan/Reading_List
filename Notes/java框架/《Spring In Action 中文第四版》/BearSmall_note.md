@@ -45,6 +45,7 @@
 ## 读书笔记记录
 
 >2017-1-18
+>>页码：0~66
 
 1. Spring的目标是致力于全方位的简化Java开发。为了降低Java开发的复杂性，Spring采取了以下四种关键策略
     * 基于POJO的轻量级和最小侵入性编程
@@ -81,7 +82,8 @@
         * Spring开始支持Servlet3.0。
         * 改善Spring对JPA的支持，使得它能够在Spring中完整地配置JPA。
         * 对Spring MVC的增强：自动绑定路径变量到模型属性中。
-        * 对Spring MVC的增强：提供了@RequestMappingproduces和consumes属性，用于配置请求中的Accept和Content-Type头部信息。
+        * 对Spring MVC的增强：提供了@RequestMappingproduces和consumes属性，用于配置Servlet容器。
+                                                                                                                                                * Spring3.2还包含了基于RestTemplate的客户端的测试支持，不需请求中的Accept和Content-Type头部信息。
         提供了@RequestPart注解，用于将multipart请求中的某些部分绑定到处理器的方法参数中。
         * 对Spring MVC的增强：支持flash属性（在redirect请求之后依然能够存活的属性）以及用于在请求间存放flash属性的RedirectAttributes类型。
 
@@ -89,8 +91,7 @@
 
    2. Spring3.2新特性
         * Spring3.2的控制器（Controller）可以使用Servlet3.0的异步请求，允许在一个独立的线程中处理请求，从而将Servlet线程解放出来处理更多的请求。
-        * Spring3.2引入了Spring MVC测试框架，在使用的过程中不需要Servlet容器。
-        * Spring3.2还包含了基于RestTemplate的客户端的测试支持，不需要往真正的REST端点上发送请求。
+        * Spring3.2引入了Spring MVC测试框架，在使用的过程中不需要要往真正的REST端点上发送请求。
         * @ControllerAdvice注解能够将通过@ExceptionHandler、@InitBinder和@ModelAttribute方法收集到一个类中，并应用到所有的控制器上。
         * 太多了、略。
    3. Spring4.0新特性
@@ -109,3 +110,33 @@
 * 书的内容比较全面，涉及到了Spring框架的各个方面，知识点也很多，比较适合当工具书使用。
 * 第四版是以Spring4为基础编写的，Spring3.1，Spring3.2，Spring4.0这几个版本都增加了很多让人眼前一亮的新特性。
 * 正好这本书里面包含Spring的Web模块，里面也讲到了Spring MVC的内容，和我在看的另外一本书知识点有些重复。打算先看Web这部分，对比两本书，去粗取精。
+
+
+>2017-1-19
+>>页码：136~166
+
+1. **Spring MVC 架构图**
+
+    >
+
+    ![Spring MVC 架构图](images/SpringMVC-architect.png)
+    >
+    *  1、	用户发送请求至前端控制器DispatcherServlet。
+    *  2、	DispatcherServlet收到请求调用HandlerMapping处理器映射器。
+    *  3、	处理器映射器根据请求url找到具体的处理器，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet。
+    *  4、	DispatcherServlet通过HandlerAdapter处理器适配器调用处理器。
+    *  5、	执行处理器(Controller，也叫后端控制器)。
+    *  6、	Controller执行完成返回ModelAndView。
+    *  7、	HandlerAdapter将controller执行结果ModelAndView返回给DispatcherServlet。
+    *  8、	DispatcherServlet将ModelAndView传给ViewReslover视图解析器。
+    *  9、	ViewReslover解析后返回具体View。
+    *  10、	DispatcherServlet对View进行渲染视图（即将模型数据填充至视图中）。
+    *  11、	DispatcherServlet响应用户。
+
+
+2. 需要注意的是，除了“redirect:”，InternalResourceViewResolver还能识别“forward:”前缀。当它发现视图格式中的“forward:”作为前缀的时候，
+请求将会前往（forward）指定的URL路径，而不再是重定向。
+
+#### 每天小结
+
+* 今天最重要的是理解上面那张图【图片根据书籍中内容以及互联网上相关资料绘制】，这是SpringMVC的核心。也是本书详细讲解到的地方。
