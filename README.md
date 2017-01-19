@@ -16,8 +16,8 @@
 |   《C++ Primer（英文第五版）》    |  5%  | 2017-2-1  | 2017-1-19 |   C.y.    |
 |          《算法导论》          | 17%  | 2017-1-17 | 2017-1-17 | liuchuang |
 |        _500lines_        |  3%  | 2017-1-10 | 2017-1-15 | liuchuang |
-| 《Spring In Action 中文第四版》 | 15%  | 2017-1-12 | 2017-1-18 | BearSmall |
-|    《Spring MVC 学习指南》     | 15%  | 2017-1-17 | 2017-1-18 | BearSmall |
+| 《Spring In Action 中文第四版》 | 20%  | 2017-1-12 | 2017-1-19 | BearSmall |
+|    《Spring MVC 学习指南》     | 25%  | 2017-1-17 | 2017-1-19 | BearSmall |
 |        《Git权威指南》         |  4%  | 2017-1-17 | 2017-1-18 | fanyonga  |
 
 # 分类
