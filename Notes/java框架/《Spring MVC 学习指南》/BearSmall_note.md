@@ -157,3 +157,68 @@ public class UserController{
 这章没几页，但是大部分篇幅都是在撸那个小例子。感觉一个具体的小例子并没有把知识点完全涵盖到。该讲的地方没有深入。
 * 第四章讲基于注解的控制器、怎么编写请求处理方法、请求参数和路径变量。这里比较重要的一点是重定向和Flash属性，这是Spring3.1一个重要的新特性。
 提供了一种方便的重定向值传递的方法。
+
+
+>2017-1-20
+>>页码：69~102
+
+1. Spring也拥有自己的表单标签库，表单标签库中包含了可以用在JSP页面中渲染HTML元素的标签。为了使用这些标签，必须在JSP页面中的开头声明这个taglib指令
+```
+<%tablib prefix="form" uri="http://www.springframework.org/tags/form"/>
+```
+
+2. Spring中的转换器和格式化：Converter和Formatter两者均可以用于将一种对象类型转换成另外一种对象类型。Converter是通用元件，
+可以在应用程序的任意层中使用，而Formatter则是专门为Web层设计的。
+
+    >**1. 使用Converter**
+    >>* 编写一个实现```org.springframework.core.convert.converter.Converter```接口的Java类，实现其converter方法。
+    >>```public interface Converter<S,T>``` ```T convert(S source);```   S:原始类型，T：转化后的类型。
+    >>* 在SpringMVC配置文件中编写一个conversionService bean，Bean的类名称必须为 ```org.springframework.context.support.ConversionServiceFactoryBean```。
+    >>这个bean必须包含一个converters属性，它将列出要在应用程序中使用的所有定制Converter。
+
+        <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+            <property name="converters">
+                <list>
+                    <bean class="MyConverter">
+                        <constructor-arg type="java.lang.String" value="MM-dd-yyyy"/>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+
+    >>* 最后要给annotation-driven元素的conversion-service属性赋bean名称
+
+        <mvc:annotation-driven conversion-service="conversionService"/>
+
+    >**2. 使用Formatter**
+    >>* 编写一个实现```org.springframework.format.Formatter```接口的Java类，实现parse和print两个方法
+    >>```public interface Formatter<T>``` ```T parse(String text,java.util.Locale locale)``` ```String print(T object,java.util.Locale locale)```。
+    >>parse方法利用指定的Locale将一个String解析成目标类型。print方法与之相反，它是返回目标对象的字符串表示法。
+    >>* 在SpringMVC配置文件中利用conversionService bean对它进行注册。bean的类名称必须为```org.springframework.format.support.FormattingConversionServiceFactoryBean```
+    >>这个bean必须包含一个formatters属性，它将列出要在应用程序中使用的所有定制Formatter。
+
+        <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+            <property name="formatters">
+                <set>
+                    <bean class="MyFormatter">
+                        <constructor-arg type="java.lang.String" value="MM-dd-yyyy"/>
+                    </bean>
+                </set>
+            </property>
+        </bean>
+
+    >>* 最后要给annotation-driven元素的conversion-service属性赋bean名称
+    >>注意：还需要给这个Formatter添加一个component-scan元素。
+
+3. Converter是一般工具，可以将一种类型转换成另一种类型。例如，将String转换成Date，或者将Long转换成Date。Converter既可以用在Web层，也可以用在其他层中。
+Formatter只能将String转换成另一种Java类型。例如，将String转换成Date，但它不能将Long转换成Date。因此，Formatter适用于web层。为此，在SpringMVC应用程序中，
+选择Formatter比选择Converter更合适。
+
+4.  SpringMVC中，有两种方式可以验证输入，即利用Spring自带的验证框架，或者利用JSR303实现。本章将详细介绍这两种输入验证方法。
+
+#### 每天小结
+* 主要看了表单标签和转化器两个部分的内容
+* 表单标签没什么好说的，书上就是罗列了标签，然后一个个的介绍是干什么的，有哪些属性。感觉有点像学HTML。。。。。。后面结合一个例子讲解了数据绑定，代码很全，
+就是这个占的篇幅有点多，其实点到就可以了。内容确实比较基础。
+* 格式化讲解了Converter和Formatter两种，比较了两者的不同以及各自的适用场景。不过这个10页的内容单独成章是不是略显单薄了。可以试着多扩展一下。
+
