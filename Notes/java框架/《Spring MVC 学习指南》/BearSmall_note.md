@@ -222,3 +222,41 @@ Formatter只能将String转换成另一种Java类型。例如，将String转换�
 就是这个占的篇幅有点多，其实点到就可以了。内容确实比较基础。
 * 格式化讲解了Converter和Formatter两种，比较了两者的不同以及各自的适用场景。不过这个10页的内容单独成章是不是略显单薄了。可以试着多扩展一下。
 
+>2017-1-21
+>>页码：103~160
+
+1. JSR 303“Bean Validation”（发布于2009年11月）和JSR 349“Bean Validation 1.1”（发布于2013年5月）指定了一整套的API，通过标注给对象添加约束。
+当然，JSR只是一个规范文档，本身用处不大，除非编写了它的实现。对于JSR bean validation，目前有两个实现。第一个实现是Hibernate Validation，目前版本为5，
+JSR 303和JSR 349两种它都实现了。第二个实现是Apache BVal，它只实现了JSR 303。
+
+2. 实现免脚本的JSP页面。将一个应用程序中所有JSP页面中的脚本都关闭
+```
+<jsp-config>
+    <jsp-property-group>
+        <url-pattern>.jsp</url-pattern>
+        <scripting-invalid>true</scripting-invalid>
+    </jsp-property-group>
+</jsp-config>
+```
+
+3. 禁用EL计算。目前有两种方式可以禁用JSP中的EL计算
+
+    * 第一种，可以将page指令中的isELIgnored属性设为True。```<%@ page isELIgnored="true" %>```。isELIgnored属性默认值为False。
+    如果想在一个或几个JSP页面中禁用EL表达式，建议使用isELIgnored属性。
+    * 第二种，可以在部署描述符中使用jsp-property-group元素。
+    ```
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>/noEl.jsp</url-pattern>
+            <el-ingored>true</el-ingored>
+        </jsp-property-group>
+    </jsp-config>
+    ```
+
+#### 每天小结
+* 今天看的很快，不是因为只是简单的翻了翻，而是因为这部分内容的问题。看了三章（第7~9章。
+* 第七章讲的验证器，和第六章有点联系。讲解了基于注解的验证器。验证器的功能很强大同时也很重要就不多说了。
+* 第八章和第九章要好好吐槽一下。延续了前面讲Spring标签的风格。总之就是有过之而无不及。通篇大讲特讲EL表达式和JSTL。
+篇幅达到45页之多（整本书除去附录也才200页多点）。重要的不是这个，重要的是这本书名叫SpringMVC学习指南。怎么把EL表达式
+和JSTL这种不属于SpringMVC的知识点放这么多进去呢？应该突出SpringMVC的重点和特点才是啊。抛开框架不谈，不管是学SpringMVC还是学Struts2，
+EL表达式和JSTL都是和JSP以及Servlet一同学习的前驱知识点吧。眼看本书内容已经过半，但书上对SpringMVC的讲解还不特别深入，故对本书持保留态度。
