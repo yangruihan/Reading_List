@@ -260,3 +260,58 @@ JSR 303和JSR 349两种它都实现了。第二个实现是Apache BVal，它只�
 篇幅达到45页之多（整本书除去附录也才200页多点）。重要的不是这个，重要的是这本书名叫SpringMVC学习指南。怎么把EL表达式
 和JSTL这种不属于SpringMVC的知识点放这么多进去呢？应该突出SpringMVC的重点和特点才是啊。抛开框架不谈，不管是学SpringMVC还是学Struts2，
 EL表达式和JSTL都是和JSP以及Servlet一同学习的前驱知识点吧。眼看本书内容已经过半，但书上对SpringMVC的讲解还不特别深入，故对本书持保留态度。
+
+>2017-1-22
+>>页码：161~196
+
+1. 在SpringMVC中处理文件上传有两种方法
+    * 使用Apache Commons FileUpload元件。
+    * 利用Servlet3.0及其更高版本的内置支持。
+2. 使用Apache Commons FileUpload元件上传文件。只有实现了Servlet3.0及其更高版本规范的Servlet容器，才支持文件上传。对版本低于Servlet3.0的容器，
+则需要Apache Commons FileUpload元件。这是一个开源的项目，因此是免费的，它还提供了源码。为了让Commons FileUpload成功的工作，还需要另外一个Apache
+Commons元件：Apache Commons IO。此外还需要在SpringMVC配置文件中定义multipartResolver bean：
+    ```
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="209715200" /><!--最大上传文件大小-->
+        <property name="defaultEncoding" value="UTF-8" /><!--默认编码格式-->
+        <property name="resolveLazily" value="true" /><!--懒加载-->
+        <property name="uploadTempDir" value="fileUpload/tmp"/> <!--上传文件临时目录-->
+        <property name="maxInMemorySize" value="10240000"/><!--最大缓存大小-->
+    </bean>
+    ```
+3. 使用Servlet3上传文件就不需要Commons FileUpload和Commons IO元件了。在Servlet3以及其以上版本的容器中进行服务器端文件上传的编程，
+是围绕着标注类型MultipartConfig和javax.servlet.http.Part接口进行的。处理已上传文件的Servlets必须以@MultipartConfig进行标注。
+SpringMVC的DispatcherServlet处理大部分或者所以请求。令人遗憾的是，如果不修改源代码，将无法对Servlet进行标注。但值得庆幸的是，
+Servlet3中有一种比较容易的方法，能使一个Servlet变成一个MultipartConfig Servlet，即给部署描述符（web.xml）中的Servlet声明赋值。
+以下代码与用@MultipartConfig给DispatcherServlet进行标注的效果一样：
+    ```
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc-servlet.xml</param-value>
+        </init-param>
+        <multipart-config>
+            <max-file-size>20848820</max-file-size>
+            <max-request-size>418018841</max-request-size>
+            <file-size-threshold>1048576</file-size-threshold>
+        </multipart-config>
+    </servlet>
+    ```
+
+    此外还需要在SpringMVC配置文件中使用一个不同的多部分解析器：
+    ```
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
+    </bean>
+    ```
+4. 在实现上传文件进度功能的时候，我们关注的是HTML5 input元素的change事件，当input元素的值发生改变时，它就会触发。
+同时我们还关注HTML5在XMLHttpRequest对象中添加progress事件。当异步使用XMLHttpRequest对象上传文件时，就会持续的触发progress事件。
+直到上传进度完成或者取消，或者直到上传进度因为出错而中断。通过监听progress事件，可以轻松地检测文件上传操作的进度。
+
+#### 每天小结
+* 今天主要看了SpringMVC中的文件上传部分。
+* 在SpringMVC中处理文件上传有两种方法：1.使用Apache Commons FileUpload元件，2.利用Servlet3.0及其更高版本的内置支持
+* 文件上传部分的特色是多文件上传以及增加了文件上传中报告上传进度功能的扩展。
