@@ -40,3 +40,40 @@ The standard guarantees minimum sizes as following:
 - When we assign an integral value to an object of floating-point type, the fractional part is zero. Precision may be lost if the integer has more bits than the floating-point object can accommodate.
 - If we assign an out-of-range value to an object of unsigned type, the result is the remainder of the value modulo the number of values the target type can hold. For example, an 8-bit `unsigned char` can hold values from `0` through `255`, inclusive. If we assign a value outside this range, the compiler assigns the remainder of that value modulo 256. Therefore, assigning `-1` to an 8-bit `unsigned char` gives that object the value `255`.
 - If we assign an out-of-range value to an object of signed type, the result is **undefined**. The program might appear to work, it might crash, or it might produce garbage values.
+
+### Escape sequence
+|name|escape sequence|
+|:---:|:---:|
+|newline|`\n`|
+|horizontal tab|`\t`|
+|alert(bell)|`\a`|
+|vertical tab|`\v`|
+|backspace|`\b`|
+|double quote|`\"`|
+|backslash|`\\`|
+|question mark|`\?`|
+|single quote|`\'`|
+|carriage return|`\r`|
+|formfeed|`\f`|
+
+### Specifying the type of a literal
+#### Character and Character String Literals
+|Prefix|Meaning|Type|
+|:---|:---|:---|
+|u|Unicode 16 character|char16\_t|
+|U|Unicode 32 character|char32\_t|
+|L|wide character|wchar_t|
+|u8|utf-8(string literals only)|char|
+
+#### Integer Literals
+|Suffix|Minimum Type|
+|:---|:---|
+|u or U|unsigned|
+|l or L|long|
+|ll or LL|long long|
+
+#### Floating-Point Literals
+|Suffix|Type|
+|:---|:---|
+|f of F|float|
+|l or L|long double|
