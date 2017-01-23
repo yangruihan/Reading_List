@@ -315,3 +315,53 @@ Servlet3中有一种比较容易的方法，能使一个Servlet变成一个Multi
 * 今天主要看了SpringMVC中的文件上传部分。
 * 在SpringMVC中处理文件上传有两种方法：1.使用Apache Commons FileUpload元件，2.利用Servlet3.0及其更高版本的内置支持
 * 文件上传部分的特色是多文件上传以及增加了文件上传中报告上传进度功能的扩展。
+
+>2017-1-23
+>>页码：196~235
+
+
+1. 以下代码将一个文件发送到浏览器：
+
+    ```
+    FileInputSrream fis = new FileInputStream(file);
+    BufferedInputStream bis = new BufferedInputStream(fis);
+    byte[] bytes = new byte[bis.available()];
+    response.setContentType(contentType);
+    OutputStream os = response.getOutputStream();
+    bis.read(bytes);
+    os.write(bytes);
+    ```
+
+2. 防止交叉引用。心怀叵测的竞争对手可能通过交叉引用“窃取”你的网站资产，例如，将你的资料公然放在他的网站上，好像那些东西
+原本就属于他的一样。如果通过编程控制，使得只有当referer标题中包含你的域名时才发出资源，就可以防止那种情况发生。当然，那些心意
+坚决的窃贼仍然有办法下载到你的东西，但是绝对不会像以前那样不费吹灰之力就能得到。
+    ```
+    @RequestMapping("/image_get/{id}",method=RequestMethod.GET)
+    public void getImage(@PathVariable String id, HttpServletRequest request,HttpServletResponse response,@RequestHeader String referer){
+        if(referer!=null){
+            ...
+        }
+    }
+    ```
+
+3. Tomcat上定义JNDI资源。定义一个JNDI资源，应用程序便可以在Tomcat上下文定义中使用。资源用Context元素目录下的Resource元素表示。例如，为了添加一个打开MySQL数据库连接
+的DataSource资源，首先要添加下面这个Resource元素：
+```
+<Context [path="/appName"] docBase="...">
+    <Resource name="jdbc/dataSourceName"
+        auth="Container"
+        type="javax.sql.DataSource"
+        username="..."
+        password="..."
+        driverClassName="com.mysql.jdbc.Driver"
+        url="..."
+     />
+</Context>
+```
+
+#### 每天小结
+* 今天重点看了文件下载和附录A（Tomcat）以及附录B（Servlet）
+* 文件下载比较简单吧，同时也介绍了隐藏资源以及防止交叉引用的问题。
+* 附录A介绍了Tomcat中定义上下文、定义资源、安装SSL证书等问题。
+* 附录B（Servlet）就不用多说了，就记住一点：Servlet 3.0 支持了注解。
+* 估计明天就可以结束这本书的阅读了，前前后后大概花了一个星期。到时再对本书做最后的个人评价。
