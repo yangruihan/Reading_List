@@ -399,3 +399,13 @@ Servlet3中有一种比较容易的方法，能使一个Servlet变成一个Multi
 >>或者看视频【淘宝上几块钱就可以买到】。如果是想系统的学习SpringMVC建议看官网的文档，另外还有一本书叫
 >>《Spring in Action》里面也有介绍SpringMVC的部分。正在读，到时候读完了视情况再推荐。
 
+>plus，以后买书要注意！！！
+>>书的封面【不要浪费钱！！！】
+
+![封面](images/springmvc-tutorial-1.jpg)
+
+>>京东上的评价（差评部分）
+
+![封面](images/springmvc-tutorial-2.jpg)
+
+![封面](images/springmvc-tutorial-3.jpg)
