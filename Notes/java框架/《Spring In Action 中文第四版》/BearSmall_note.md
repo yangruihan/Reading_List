@@ -171,3 +171,14 @@
 * Spring对渲染视图的支持
 * Spring支持多种视图解析器，要视具体引用场景而定。
 * Spring的通用标签库
+
+
+>2017-1-25
+>>页码：181-190
+
+1. 使用Apache Tiles 定义视图
+    * 配置Apache Tiles视图解析器
+
+#### 每天小结
+* 使用Apache Tiles 定义视图
+* 配置Apache Tiles视图解析器
