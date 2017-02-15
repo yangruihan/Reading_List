@@ -77,3 +77,35 @@ The standard guarantees minimum sizes as following:
 |:---|:---|
 |f of F|float|
 |l or L|long double|
+
+### Identifiers
+#### C++ Keywords
+- **alignas alignof asm auto**
+- **bool break**
+- **case catch char char16_t char32_t class const constexpr const_cast continue**
+- **decltype default delete do double dynamic_cast**
+- **else enum explicit export extern**
+- **false float for friend**
+- **goto**
+- **if inline int**
+- **long**
+- **mutable**
+- **namespace new noexcept nullptr**
+- **operator**
+- **private protected pulibc**
+- **register reinterpret_cast return**
+- **short signed sizeof static static\_assert static\_cast struct switch**
+- **template this thread_local throw true try typedef typeid typename**
+- **union unsigned using**
+- **virtual void volatile**
+- **wchar_t while**
+
+#### C++ Alternative Operator Namespace
+**and bitand compl not\_eq or\_eq xor\_eq and\_eq bitor not or xor**
+
+### Compound Types
+#### References
+A reference is not an object. Instead, a reference is _just another name for an already existing object_.
+
+#### Pointers
+Our recommendation to initialize all variables is particularly important for pointers. If possible, define a pointer only after the object to which it should point has been defined. If there is no ojbect to bind to a pointer, then initialize the pointer to **nullptr** or *zero**. That way, the program can detect the pointer does not point to an object.
