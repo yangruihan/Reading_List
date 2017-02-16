@@ -109,3 +109,7 @@ A reference is not an object. Instead, a reference is _just another name for an 
 
 #### Pointers
 Our recommendation to initialize all variables is particularly important for pointers. If possible, define a pointer only after the object to which it should point has been defined. If there is no ojbect to bind to a pointer, then initialize the pointer to **nullptr** or *zero**. That way, the program can detect the pointer does not point to an object.
+
+### `const` Qualifier
+To share a `const` object among multiple files, you must define the variable as `extern`.
+
