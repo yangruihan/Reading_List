@@ -19,6 +19,7 @@
 | 《Spring In Action 中文第四版》 |  44.5%  | 2017-1-12 | 2017-2-16 | BearSmall | 正在阅读 |
 |    《Spring MVC 学习指南》     | 100%  | 2017-1-17 | 2017-1-24 | BearSmall | 阅读完毕 |
 |        《Git权威指南》         |  19%  | 2017-1-17 | 2017-1-21 | fanyonga  | 正在阅读 |
+|      《AngularJs权威指南》     |  0%   | 2017-2-17 | 2017-2-17 | SmileHr   | 正在阅读 |
 
 # 分类
 ## 算法
@@ -39,3 +40,5 @@
 
 [500lines]:https://github.com/aosabook/500lines
 
+## JAvaScript框架
+- 《AngularJs权威指南》 SmileHr
