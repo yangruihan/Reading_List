@@ -22,6 +22,7 @@
 |        《Git权威指南》         |  25%  | 2017-2-19 | 2017-2-19 | fanyonga  | 正在阅读 |
 |      《阿里巴巴Java开发手册》      | 100%  | 2017-2-17 | 2017-2-19 | fanyonga  | 阅读完毕 |
 |     《AngularJs权威指南》      |  0%   | 2017-2-17 | 2017-2-17 |  SmileHr  | 正在阅读 |
+|          《NodeJs教程》        |  10%   | 2017-2-20 | 2017-2-20 |  SmileHr  | 正在阅读 |
 
 # 分类
 ## 算法
@@ -44,3 +45,4 @@
 
 ## JAvaScript框架
 - 《AngularJs权威指南》 SmileHr
+- 《NodeJs教程》 SmileHr
