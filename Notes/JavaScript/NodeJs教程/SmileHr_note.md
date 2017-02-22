@@ -1,7 +1,7 @@
 # 《NodeJs教程》
 
 > NodeJs概述
->> Node.jsisaplatformbuiltonChrome'sJavaScriptruntimeforeasilybuildingfast,scalablenetworkapplications.Node.jsusesanevent-driven,non-blockingI/Omodelthatmakesitlightweightandefficient,perfectfordata-intensivereal-timeapplicationsthatrunacrossdistributeddevices
+>> Node.js is a platform built on Chrome's JavaScript runtime for easily building fast,scalable network applications.Node.js uses an event-driven,non-blocking I/O model that makes it lightweight and efficient,perfect for data-intensive real-time applications that run across distributed devices
 
 
 ##章节目录
