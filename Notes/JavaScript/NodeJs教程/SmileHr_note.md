@@ -8,8 +8,6 @@
 * 第一章：NodeJs入门
 * 第二章：Node.Js NPM
 * 第三章：Node事件编程
-* 第四章：Node文件操作
-* 第五章：Node模块
 
 #### 第一章 NodeJS入门
 ##### 1.Node 安装
