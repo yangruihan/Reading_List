@@ -50,3 +50,88 @@
 > OOP让你定义“对象”，将数据和代码绑定在一起。
 
 
+### 单例模式
+> 保证一个类只有一个实例，并且提供了访问该实例的全局访问点。
+
+#### 单例模式的优点
+- **如果没人用**，就不必创建实例（懒加载模式）：节约内存和CPU循环总是好的。由于单例只在第一次被请求时实例化，如果游戏永远不请求，那么它不会被实例化
+
+- **它在运行时实例化**：惰性初始化会使单例尽可能晚的初始化，所以当它初始化时，所有需要的信息都应该可用了。只要没有环状依赖，一个单例在初始化它自己时甚至可以引用另一个单例。
+
+- **可继承单例**
+
+    假设我们需要跨平台的文件系统封装类。为了达到这一点，我们需要它变成文件系统抽象出来的接口，而子类为每个平台实现接口。这是基类：
+
+    ```[c++]
+    class FileSystem() {}
+    {
+    public:
+        virtual ~FileSystem() {}
+        virtual char* readFile(char* path) = 0;
+        virtual void writeFile(char* path, char* contents)
+    };
+    ```
+    
+    然后为一堆平台定义子类：
+    
+    ```[c++]
+    class PS3FileSystem : public FileSystem
+    {
+    public:
+        virtual char* readFile(char* path)
+        {
+            // 使用索尼的文件读写API......
+        }
+        
+        virtual void writeFile(char* path, char* contents)
+        {
+            // 使用索尼的文件读写API......
+        }
+    };
+    
+    class WiiFileSystem : public FileSystem
+    {
+    public:
+        virtual char* readFile(char* path)
+        {
+            // 使用任天堂的文件读写API......
+        }
+        
+        virtual void writeFile(char* path, char* contents)
+        {
+            // 使用任天堂的文件读写API......
+        }
+    };
+    ```
+    
+    下一步，将`FileSystem`变成单例：
+    
+    ```[c++]
+    class FileSystem
+    {
+    public:
+        static FileSystem& instance();
+        
+        virtual ~FileSystem() {}
+        virtual char* readFile(char* path) = 0;
+        virtual void writeFile(char* path, char* contents)
+        
+    protected:
+        FileSystem() {}
+    };
+    ```
+    
+    灵巧之处在于如何创建实例：
+    
+    ```[c++]
+    FileSystem& FileSystem::instance()
+    {
+    #if PLATFORM == PLAYSTATION3
+        static FileSystem *instance = new PS3FileSystem();
+    #elif PLATFORM == WII
+        static FileSystem *instance = new WiiFileSystem();
+    #endif
+    
+        return *instance;
+    }
+    ```
