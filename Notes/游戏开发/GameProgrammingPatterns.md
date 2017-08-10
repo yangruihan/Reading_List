@@ -71,9 +71,9 @@
         virtual void writeFile(char* path, char* contents)
     };
     ```
-    
+
     然后为一堆平台定义子类：
-    
+
     ```[c++]
     class PS3FileSystem : public FileSystem
     {
@@ -82,13 +82,13 @@
         {
             // 使用索尼的文件读写API......
         }
-        
+
         virtual void writeFile(char* path, char* contents)
         {
             // 使用索尼的文件读写API......
         }
     };
-    
+
     class WiiFileSystem : public FileSystem
     {
     public:
@@ -96,33 +96,33 @@
         {
             // 使用任天堂的文件读写API......
         }
-        
+
         virtual void writeFile(char* path, char* contents)
         {
             // 使用任天堂的文件读写API......
         }
     };
     ```
-    
+
     下一步，将`FileSystem`变成单例：
-    
+
     ```[c++]
     class FileSystem
     {
     public:
         static FileSystem& instance();
-        
+
         virtual ~FileSystem() {}
         virtual char* readFile(char* path) = 0;
         virtual void writeFile(char* path, char* contents)
-        
+
     protected:
         FileSystem() {}
     };
     ```
-    
+
     灵巧之处在于如何创建实例：
-    
+
     ```[c++]
     FileSystem& FileSystem::instance()
     {
@@ -131,7 +131,7 @@
     #elif PLATFORM == WII
         static FileSystem *instance = new WiiFileSystem();
     #endif
-    
+
         return *instance;
     }
     ```
@@ -177,7 +177,7 @@
 1. 交换本身需要时间
 
     在状态被修改后，双缓冲需要一个**swap**步骤。这个操作必须是原子的——在交换时，没有代码可以接触到任何一个状态。通常，这就是修改一个指针那么快，但是如果交换消耗的时间长于修改状态的时间，那就毫无益处
-    
+
 2. 我们得保存两个缓冲区
 
     这个模式的另一个结果就是增加了内存的使用。
@@ -186,3 +186,5 @@
 #### 意图
 将游戏的进行和玩家输入解耦，和处理器速度解耦
 
+#### 模式
+一个**游戏循环**在游玩中不断运行。 每一次循环，它无阻塞地**处理玩家输入**，**更新游戏状态**，**渲染游戏**。 它追踪时间的消耗并控制游戏的速度。
