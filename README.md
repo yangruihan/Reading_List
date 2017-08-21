@@ -45,6 +45,9 @@
 
 [500lines]:https://github.com/aosabook/500lines
 
-## JAvaScript框架
+## JavaScript框架
 - 《AngularJs权威指南》 SmileHr
 - 《NodeJs教程》 SmileHr
+
+## 游戏
+- [《Game Programming Patterns》](http://gpp.tkchu.me/) C.y.
