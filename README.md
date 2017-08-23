@@ -25,7 +25,7 @@
 |              《阿里巴巴Java开发手册》              | 100%  | 2017-2-17 | 2017-2-19  | fanyonga  | 阅读完毕 |
 |             《AngularJs权威指南》              |  30%  | 2017-2-17 | 2017-2-27  |  SmileHr  | 正在阅读 |
 |                《NodeJs教程》                |  50%  | 2017-2-20 | 2017-2-21  |  SmileHr  | 正在阅读 |
-|     [_ANSI Common Lisp_][CommonLisp]     |  10%  | 2017-8-22 | 2017-08-22 | liuchuang | 正在阅读 |
+|     [_ANSI Common Lisp_][CommonLisp]     |  18%  | 2017-8-22 | 2017-08-23 | liuchuang | 正在阅读 |
 
 # 分类
 ## 算法
