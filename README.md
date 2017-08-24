@@ -56,6 +56,6 @@
 - 《游戏引擎架构》 C.y.
 
 ## Lisp
-[_ANSI Common Lisp_][CommonLisp] liuchuang
+- [_ANSI Common Lisp_][CommonLisp] liuchuang
 
 [CommonLisp]:https://acl.readthedocs.io/en/latest/zhCN
