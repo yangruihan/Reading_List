@@ -15,8 +15,11 @@
 | 《Git权威指南》                                       | 62%    | 2017-1-10    | 2017-2-14    | C.y.      | 结束阅读 |
 | 《C++ Primer（英文第五版）》                          | 20.0%  | 2017-1-19    | 2017-4-20    | C.y.      | 暂停阅读 |
 | [《Game Programming Patterns》](http://gpp.tkchu.me/) | 100.0% | 2017-7-24    | 2017-8-24    | C.y.      | 完成阅读 |
-| 《游戏引擎架构》                                      | 37%    | 2017-8-24    | 2017-11-28   | C.y.      | 正在阅读 |
-| 《计算机程序的构造和解释（SICP中文第2版）》           | 4%     | 2017-11-25   | 2017-11-26   | C.y.      | 正在阅读 |
+| 《游戏引擎架构》                                      | 37%    | 2017-8-24    | 2017-11-28   | C.y.      | 暂停阅读 |
+| 《计算机程序的构造和解释（SICP中文第2版）》           | 4%     | 2017-11-25   | 2017-11-26   | C.y.      | 暂停阅读 |
+| 《C++ Primer Plus（第六版）》                         | 100.0% | 2018-06-10   | 2018-06-29   | C.y.      | 完成阅读 |
+| 《Learning Unreal Engine Game Development》           | 39.0%  | 2018-06-30   | 2018-07-02   | C.y.      | 正在阅读 |
+| 《Effective C#》                                      | 5%     | 2018-07-02   | 2018-07-02   | C.y.      | 正在阅读 |
 | 《算法导论》                                          | 42%    | 2017-1-17    | 2017-2-26    | liuchuang | 正在阅读 |
 | [_500lines_][500lines]                                | 7%     | 2017-1-10    | 2017-1-22    | liuchuang | 正在阅读 |
 | 《Spring In Action 中文第四版》                       | 45%    | 2017-1-12    | 2017-2-18    | BearSmall | 正在阅读 |
@@ -35,6 +38,10 @@
 
 ## C/C++
 - 《C++ Primer（英文第五版）》 C.y.
+- 《C++ Primer Plus（第六版）》 C.y.
+
+## C#
+- 《Effective C#》
 
 ## Git
 - 《Git权威指南》 C.y.
@@ -55,6 +62,7 @@
 ## 游戏
 - [《Game Programming Patterns(中文版)》](http://gpp.tkchu.me/) C.y.
 - 《游戏引擎架构》 C.y.
+- 《Learning Unreal Engine Game Development》 C.y.
 
 ## Lisp
 - [_ANSI Common Lisp_][CommonLisp] liuchuang
