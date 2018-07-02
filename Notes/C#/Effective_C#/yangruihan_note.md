@@ -1,6 +1,6 @@
 # Effective C#
 
-## Use Properties Instead of Accessible Data Members
+## 1. Use Properties Instead of Accessible Data Members
 
 1. 需要对属性做约束和额外处理时，无需在类中寻找到底哪些位置对属性进行了修改，只需要修改 Properties set && get 方法即可
 
@@ -54,7 +54,7 @@
 
 7. 在实现 Properties set && get 时，应将其当成成员数据，即 get 方法不存在明显的副作用，且不能有耗时操作，set 方法改变类的状态，且用户可见
 
-## Prefer `readonly` to `const`
+## 2. Prefer `readonly` to `const`
 
 1. 编译期常量和运行时常量区别：
 
@@ -67,7 +67,7 @@
 
 2. 由于编译期常量（`const`）在编译时将内容直接替换为常量值，这会导致一旦更新常量值，需要将所有用到该常量值的程序集都重新编译一遍，使其更新到最新值，而运行时常量（`readonly`）在运行时才通过引用确认其值，只需要更新包含该常量的程序集即可
 
-## Prefre the `is` or `as` Operators to Casts
+## 3. Prefre the `is` or `as` Operators to Casts
 
 1. 尽可能地使用`as`操作符，因为它比直接类型转换安全，且在运行时更高效
 
