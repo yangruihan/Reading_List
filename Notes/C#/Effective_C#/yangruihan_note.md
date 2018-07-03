@@ -78,3 +78,33 @@
 4. `as`操作符不能用在值类型上（使用装箱与拆箱，同时可以使用`is`操作符进行判断）
 
 5. 有时需要通过强制类型转换来规避基本类型或用户定义类型之间的差异，如`foreach`循环
+
+## 4. Use Conditional Attributes Instead of `#if`
+
+1. Conditional Attributes 作用于方法
+
+2. 添加了 Conditional Attributes 的方法，在环境变量不满足的情况下，还是会被编译到程序集中，但是调用它的入口都会被删掉，即只占硬盘空间不占内存空间（没有调用不会被加载到内存中）和调用资源
+
+3. Conditional Attributes 可以同时添加多个条件，他们之间的关系是 OR
+
+    ```c#
+    [Conditional("Debug"),
+     Conditional("TRACE")]
+    private void CheckState() { ... }
+    ```
+4. 如果想使用 AND 关系组织多个条件，可以使用原始方法`#if/#define`
+
+    ```c#
+    #if ( VAR1 && VAR2 )
+    #define BOTH_VAR1_VAR2
+    #endif
+
+    private void CheckState()
+    {
+    #if BOTH_VAR1_VAR2
+    ...
+    #endif
+    }
+    ```
+
+5. 添加 Conditional Attributes 的方法返回值必须为`void`，且不能产生任何边际效应，否则会导致代码在不同构建版本出现逻辑不一致的情况
