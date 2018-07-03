@@ -58,12 +58,12 @@
 
 1. 编译期常量和运行时常量区别：
 
-    |-|编译期|运行时|
-    |:---|:---:|:---:|
-    |关键字|`const`|`readonly`|
-    |适用范围|`class`、`struct`、`method`|`class`、`struct`|
-    |行为|编译期替换|运行时引用|
-    |类型限制|基础类型、枚举、字符串|任何类型|
+    | -        | 编译期                      | 运行时            |
+    | :------- | :-------------------------: | :---------------: |
+    | 关键字   | `const`                     | `readonly`        |
+    | 适用范围 | `class`、`struct`、`method` | `class`、`struct` |
+    | 行为     | 编译期替换                  | 运行时引用        |
+    | 类型限制 | 基础类型、枚举、字符串      | 任何类型          |
 
 2. 由于编译期常量（`const`）在编译时将内容直接替换为常量值，这会导致一旦更新常量值，需要将所有用到该常量值的程序集都重新编译一遍，使其更新到最新值，而运行时常量（`readonly`）在运行时才通过引用确认其值，只需要更新包含该常量的程序集即可
 
@@ -108,3 +108,33 @@
     ```
 
 5. 添加 Conditional Attributes 的方法返回值必须为`void`，且不能产生任何边际效应，否则会导致代码在不同构建版本出现逻辑不一致的情况
+
+## 5. Always Provide `ToString()`
+
+1. `System.Object` 有一个默认的 `ToString()`方法，返回当前调用实例的类型，通常没有任何意义，需重写`ToString()`方法
+
+2. 可以通过实现`IFormattable`接口中的`ToString(string format, IFormatProvider formatProvider)`方法来实现更为灵活的显示
+
+3. 在极少数情况下，当您的类型需要提供更复杂的输出时，您应该利用实现`IFormattable`接口，同时可以通过实现`IFormatProvider`来从外部对某些对象提供期望的输出：
+
+    ```c#
+    public class CustomFormatter : IFormatProvider {
+
+        public object GetFormat(Type formatType) {
+            if (formatType == typeof(ICustomFormatter))
+                return new CustomerFormatProvider();
+            return null;
+        }
+
+        private class CustomerFormatProvider : ICustomFormatter {
+
+            public string Format(string format, object arg, IFormatProvider formatProvider) {
+                Customer c = arg as Customer;
+                if (c == null)
+                    return arg.ToString();
+                return string.Format("{0,50}, {1,15}, {2,10:C}", c.Name, c.ContactPhone, c.Revenue);
+            }
+        }
+    }
+    ```
+
