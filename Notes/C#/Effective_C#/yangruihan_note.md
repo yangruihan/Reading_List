@@ -14,8 +14,8 @@
         private string name;
         public string Name
         {
-                get { lock(syncHandle) return name; }
-                set { lock(syncHandle) name = value; }
+            get { lock(syncHandle) return name; }
+            set { lock(syncHandle) name = value; }
         }
    }
    ```
@@ -26,29 +26,29 @@
 
 5. 可以通过 Properties 来简化索引访问实现：
 
-   - 一维：
+    - 一维：
 
-   ```c#
-   public int this[int index]
-   {
+    ```c#
+    public int this[int index]
+    {
         get { return theValues[index]; }
         set { thevalues[index] = value; }
-   }
-   ```
+    }
+    ```
 
-   - 二维：
+    - 二维：
 
-   ```c#
-   public int this[int x, int y]
-   {
+    ```c#
+    public int this[int x, int y]
+    {
         get { return work(x, y); }
-   }
+    }
 
-   public int this[int index, string name]
-   {
+    public int this[int index, string name]
+    {
         get { return work(index, name); }
-   }
-   ```
+    }
+    ```
 
 6. Properties 和成员数据访问性能对比，JIT Compiler 会将 Properties 设置成 `inline` 方法，因此性能与直接访问成员数据没有什么差别，即使没有设置成 `inline` 方法，也只是多了一个函数调用的性能消耗，除非某些特定场景，否则可以忽略不计
 
@@ -187,3 +187,18 @@
         }
     }
     ```
+
+## 7. Understand the Pitfalls of `GetHashCode()`
+
+1. 如果自定义类型不会用作基于 Hash 的集合的键，则无需重写`GetHashCode()`方法
+
+2. 重写`GetHashCode()`方法必须遵循以下 3 条规则：
+
+    1. 如果两个对象相等（即`a==b`成立），则它们必须生成相同的 Hash 值，否则，Hash 值不能用在容器中进行查找
+    2. 对于任何对象 A，`A.GetHashCode()`必须是实例不变量，即无论在 A 上调用什么方法，`A.GetHashCode()`必须始终返回相同的值，这保证了一个对象始终处于容器中的正确位置
+    3. 散列函数应在所有输入的整数之间生成随机分布，这决定了你从基于哈希的容器中取得该对象效率的方法
+
+3. 引用类型默认的`Object.GetHashCode()`生成的值集中在整数范围的低端，因此，尽管得到的结果是正确的，确实很低效的
+
+4. 值类型默认的`ValueType.GetHashCode()`返回的值是来自该类型中定义的第一个字段的哈希值，因此仅在结构中的第一个字段是只读时才有效，且仅在结构中的第一个字段包含其输入的有意义子集中的值时才生成高效的哈希代码
+
