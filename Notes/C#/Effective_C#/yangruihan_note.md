@@ -138,3 +138,52 @@
     }
     ```
 
+## 6. Understand the Relationship Among the Many Different Concepts of Equality
+
+1. C# 提供了 4 种方法来判断两个不同的实例是否”相等“：
+
+    1. `public static bool ReferenceEquals (object left, object right);`，比较值类型时永远为 False
+    2. `public static bool Equals (object left, object right);`
+    3. `public virtual bool Equals(object right);`
+    4. `public static bool operator ==(MyClass left, MyClass right);`
+
+2. 前两种方法应该永远不被修改，它们已经做到期望做到的事情
+
+3. 编写自己的`Equals`方法时需要考虑数学中相等的三个特性：
+
+    1. 自反性（reﬂexive）：表明无论任何类型，其自身等于自身永远成立。即`a==a`永远为 True
+    2. 对称性（symmetric）：表明无论任何类型，有`a==b`，则一定有`b==a`
+    3. 传递性（transitive）：表明无论任何类型，有`a==b`和`b==c`，则一定有`a==c`
+
+4. 何时编写自己的`Equals`方法：
+
+    1. 对于值类型来说，如果成员内容很大，默认方法性能会出现问题，则可以考虑自己编写一个效率更高的方法
+    2. 对于引用类型来说，如果在判断相等的时候需要表达值语义，而不是引用语义，即希望其内容相等就表示相等，而不是地址相同才相等，则需要自己编写一个方法
+
+5. 无论何时创建值类型，都应该重新定义运算符`==()`。 原因与实例`Equals()`函数完全相同。默认版本使用反射来比较两种值类型的内容，效率很低
+
+6. 基本模板：
+
+    ```c#
+    public class Foo : IEquatable<Foo> {
+        
+        public override bool Equals(object right) {
+            // check null
+            // this pointer is never null in c# methods.
+            if (object.ReferenceEquals(right, null))
+                return false;
+
+            if (object.ReferenceEquals(this, right))
+                return true;
+
+            if (this.GetType() != right.GetType())
+                return false;
+
+            return this.Equals(right as Foo);
+        }
+
+        public bool Equals(Foo other) {
+            return true;
+        }
+    }
+    ```
