@@ -19,7 +19,7 @@
 | 《计算机程序的构造和解释（第2版）》                   | 4%     | 2017-11-25   | 2017-11-26   | C.y.      | -暂停阅读 |
 | 《C++ Primer Plus（第六版）》                         | 100.0% | 2018-06-10   | 2018-06-29   | C.y.      | √完成阅读 |
 | 《Learning Unreal Engine Game Development》           | 100.0% | 2018-06-30   | 2018-07-10   | C.y.      | √完成阅读 |
-| 《Blueprints Visual Scripting for Unreal Engine》     | 43.0%  | 2018-7-11    | 2018-7-14    | C.y.      | *正在阅读 |
+| 《Blueprints Visual Scripting for Unreal Engine》     | 45.0%  | 2018-7-11    | 2018-7-14    | C.y.      | *正在阅读 |
 | 《Effective C#》                                      | 10%    | 2018-07-02   | 2018-07-02   | C.y.      | *正在阅读 |
 | 《算法导论》                                          | 42%    | 2017-1-17    | 2017-2-26    | liuchuang | 正在阅读  |
 | [_500lines_][500lines]                                | 7%     | 2017-1-10    | 2017-1-22    | liuchuang | 正在阅读  |
