@@ -37,3 +37,9 @@ Given the transformed and projected vertices with their associated shading data 
 ```
 Triangle Setup -> Triangle Traversal -> Pixel Shading -> Merging
 ```
+
+## Chapter 3 The Graphics Processing Unit
+
+### The Vertex Shader
+
+The vertex shader provides a way to modify, create, or ignore values associated with each polygon’s vertex, such as its color, normal, texture coordinates, and position. Normally the vertex shader program transforms vertices from model space to homogeneous clip space; at a minimum, a vertex shader must always output this location.
