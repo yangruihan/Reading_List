@@ -16,7 +16,7 @@
 | 《C++ Primer（英文第五版）》                          | 20.0%  | 2017-1-19    | 2017-4-20    | C.y.      | -暂停阅读 |
 | [《Game Programming Patterns》](http://gpp.tkchu.me/) | 100.0% | 2017-7-24    | 2017-8-24    | C.y.      | √完成阅读 |
 | 《游戏引擎架构》                                      | 100.0% | 2017-8-24    | 2018-9-19    | C.y.      | √完成阅读 |
-| 《Real-Time Rendering 3rd Edition》                   | 6%     | 2018-10-11   | 2018-10-18   | C.y.      |
+| 《Real-Time Rendering 3rd Edition》                   | 6%     | 2018-10-11   | 2018-10-18   | C.y.      ||
 | 《计算机程序的构造和解释（第2版）》                   | 4%     | 2017-11-25   | 2017-11-26   | C.y.      | -暂停阅读 |
 | 《C++ Primer Plus（第六版）》                         | 100.0% | 2018-06-10   | 2018-06-29   | C.y.      | √完成阅读 |
 | 《Learning Unreal Engine Game Development》           | 100.0% | 2018-06-30   | 2018-07-10   | C.y.      | √完成阅读 |
@@ -34,6 +34,7 @@
 | 《AngularJs权威指南》                                 | 30%    | 2017-2-17    | 2017-2-27    | SmileHr   | 正在阅读  |
 | 《NodeJs教程》                                        | 50%    | 2017-2-20    | 2017-2-21    | SmileHr   | 正在阅读  |
 | [_ANSI Common Lisp_][CommonLisp]                      | 18%    | 2017-8-22    | 2017-08-23   | liuchuang | 正在阅读  |
+| [《ECMAScript 6 简介》][ECMAScript6-intro] | 100% | 2018-04-16 | 2018-06-16 | liuchuang | √完成阅读 |
 
 # 分类
 ## 算法
@@ -61,6 +62,7 @@
 ## JavaScript框架
 - 《AngularJs权威指南》 SmileHr
 - 《NodeJs教程》 SmileHr
+- [《ECMAScript 6 简介》][ECMAScript6-intro] liuchuang
 
 ## 游戏
 - [《Game Programming Patterns(中文版)》](http://gpp.tkchu.me/) C.y.
@@ -72,3 +74,4 @@
 - [_ANSI Common Lisp_][CommonLisp] liuchuang
 
 [CommonLisp]:https://acl.readthedocs.io/en/latest/zhCN
+[ECMAScript6-intro]:http://es6.ruanyifeng.com/#docs/intro
