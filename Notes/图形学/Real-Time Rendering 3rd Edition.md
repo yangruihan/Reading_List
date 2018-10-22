@@ -75,3 +75,15 @@ The merging stage is where the depths and colors of the individual fragments (ge
 These shaders are functions. An eﬀect ﬁle can consist of any number of functions and can include commonly used functions from other eﬀects ﬁles.
 
 A pass typically consists of a vertex and pixel (and geometry) shader, 6 along with any state settings needed for the pass.
+
+## Chapter 4 Transforms
+
+A transform is an operation that takes entities such as points, vectors, or colors and converts them in some way.
+
+A linear transform is one that preserves vector addition and scalar multiplication.
+
+An aﬃne transform is one that performs a linear transform and then a translation.
+
+All translation, rotation, scaling, reﬂection, and shearing matrices are aﬃne. 
+
+The main characteristic of an aﬃne matrix is that it preserves the parallelism of lines, but not necessarily lengths and angles. An aﬃne transform may also be any sequence of concatenations of individual aﬃne transforms.
