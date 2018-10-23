@@ -87,3 +87,13 @@ An aﬃne transform is one that performs a linear transform and then a translati
 All translation, rotation, scaling, reﬂection, and shearing matrices are aﬃne. 
 
 The main characteristic of an aﬃne matrix is that it preserves the parallelism of lines, but not necessarily lengths and angles. An aﬃne transform may also be any sequence of concatenations of individual aﬃne transforms.
+
+### Concatenation of Transforms
+
+This composite matrix is **C** = **TRS**. Note the order here: The scaling matrix, S, should be applied to the vertices ﬁrst, and therefore appears to the right in the composition. This ordering implies that **TRSp** = (**T**(**R**(**Sp**))).
+
+### The Rigid-Body Transform
+
+Such a transform, consisting of concatenations of only translations and rotations, is called a rigid-body transform and has the characteristic of preserving lengths, angles, and handedness.
+
+The inverse of **X** is computed as **X**<sup>−1</sup> = (**T**(**t**)**R**)<sup>−1</sup> = **R**<sup>−1</sup>**T**(**t**)<sup>−1</sup> = **R**<sup>*T*</sup>**T**(−**t**).
