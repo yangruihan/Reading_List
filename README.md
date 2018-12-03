@@ -17,7 +17,7 @@
 | [《Game Programming Patterns》](http://gpp.tkchu.me/)    | 100.0% | 2017-7-24    | 2017-8-24    | C.y.      | √完成阅读 |
 | 《游戏引擎架构》                                         | 100.0% | 2017-8-24    | 2018-9-19    | C.y.      | √完成阅读 |
 | 《Real-Time Rendering 3rd Edition》                      | 13%    | 2018-10-11   | 2018-11-27   | C.y.      | *正在阅读 |
-| [craftinginterpreters](http://craftinginterpreters.com/) | 33.3%  | 2018-11-24   | 2018-12-02   | C.y.      | *正在阅读 |
+| [craftinginterpreters](http://craftinginterpreters.com/) | 35.3%  | 2018-11-24   | 2018-12-03   | C.y.      | *正在阅读 |
 | 《计算机程序的构造和解释（第2版）》                      | 4%     | 2017-11-25   | 2017-11-26   | C.y.      | -暂停阅读 |
 | 《C++ Primer Plus（第六版）》                            | 100.0% | 2018-06-10   | 2018-06-29   | C.y.      | √完成阅读 |
 | 《Learning Unreal Engine Game Development》              | 100.0% | 2018-06-30   | 2018-07-10   | C.y.      | √完成阅读 |
