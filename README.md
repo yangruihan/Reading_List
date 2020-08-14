@@ -29,8 +29,8 @@
 | [《Effective C#》](https://www.amazon.cn/dp/B07D5952BF/ref=sr_1_1?ie=UTF8&qid=1545199348&sr=8-1&keywords=Effective+C%23)                                                                                                         |  10%   |  2018-07-02  |  2018-07-02  | C.y.      | -暂停阅读 |
 | 《lua程序设计第四版》                                                                                                         |  100%   |  2020-07-10  |  2020-07-18  | C.y.      | √完成阅读 |
 | 《Clojure编程实战》                                                                                                         |  60%   |  2020-07-24  |  2020-08-13 | C.y.      | -正在阅读 |
-| 《算法导论》                                                                                                                                                                                                                     |  42%   |  2017-1-17   |  2017-2-26   | liuchuang | 正在阅读  |
-| [_500lines_][500lines]                                                                                                                                                                                                           |   7%   |  2017-1-10   |  2017-1-22   | liuchuang | 正在阅读  |
+| 《算法导论》                                                                                                                                                                                                                     |  42%   |  2017-1-17   |  2017-2-26   | liuchuang | *暂停阅读 |
+| [_500lines_][500lines]                                                                                                                                                                                                           |   7%   |  2017-1-10   |  2017-1-22   | liuchuang | *暂停阅读 |
 | 《Spring In Action 中文第四版》                                                                                                                                                                                                  |  45%   |  2017-1-12   |  2017-2-18   | BearSmall | 正在阅读  |
 | 《王道机试指南》                                                                                                                                                                                                                 |  85%   |  2017-2-20   |  2017-3-24   | bearsmall | 正在阅读  |
 | 《Spring MVC 学习指南》                                                                                                                                                                                                          |  100%  |  2017-1-17   |  2017-1-24   | BearSmall | 阅读完毕  |
@@ -82,8 +82,29 @@
 
 ## Lisp
 - [_ANSI Common Lisp_][CommonLisp] liuchuang
-- [CommonLisp](https://acl.readthedocs.io/en/latest/zhCN)
-- [ECMAScript6-intro](http://es6.ruanyifeng.com/#docs/intro)
 
 ## Lua
 - 《lua程序设计第四版》 C.y.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[CommonLisp]: https://acl.readthedocs.io/en/latest/zhCN
+[ECMAScript6-intro]: http://es6.ruanyifeng.com/#docs/intro
