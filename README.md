@@ -77,7 +77,7 @@
 
 ## Python
 - [_500lines_][https://github.com/aosabook/500lines] liuchuang
-- [Dive Into Python 3][https://diveintopython3.problemsolving.io/] csl
+- [《Dive Into Python 3》][https://diveintopython3.problemsolving.io/] csl
 
 ## Java框架
 - 《Spring In Action 中文第四版》 BearSmall
