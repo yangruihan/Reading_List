@@ -76,8 +76,8 @@
 - 《Git权威指南》 C.y.
 
 ## Python
-- [_500lines_][https://github.com/aosabook/500lines] liuchuang
-- [《Dive Into Python 3》][https://diveintopython3.problemsolving.io/] csl
+- [_500lines_][500lines] liuchuang
+- [《Dive Into Python 3》][dp3] csl
 
 ## Java框架
 - 《Spring In Action 中文第四版》 BearSmall
@@ -102,3 +102,8 @@
 
 [CommonLisp]: https://acl.readthedocs.io/en/latest/zhCN
 [ECMAScript6-intro]: http://es6.ruanyifeng.com/#docs/intro
+[500lines]:https://github.com/aosabook/500lines
+[dp3]:https://diveintopython3.problemsolving.io/
+
+
+
