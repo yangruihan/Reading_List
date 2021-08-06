@@ -7,9 +7,22 @@
 - [liuchuang(addliu)](https://github.com/addliu)
 - [BearSmall(bearsmall)](https://github.com/bearsmall)
 - [SmileHr(SmileHr)](https://github.com/SmileHr)
+- [chenshulun458](https://github.com/chenshulun458)
 
 # 阅读计划
-## 2017-2020
+
+## 2021
+
+| 书名                                                                                                                                                                                                                             |  进度  | 计划开始时间 | 最后阅读时间 | 阅读者    |   状态    |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----: | :----------: | :----------: | :-------- | :-------: |
+| [《深入理解计算机系统》](https://book.douban.com/subject/26912767/)                                                                                                                                                              |   8%   |  2021-08-04  |  2021-08-05  | C.y.      | 正在阅读  |
+| [《Effective C#》](https://www.amazon.cn/dp/B07D5952BF/ref=sr_1_1?ie=UTF8&qid=1545199348&sr=8-1&keywords=Effective+C%23)                                                                                                         |  25%   |  2018-07-02  |  2021-03-05  | C.y.      | -正在阅读 |
+
+<details>
+  <summary>历史</summary>
+
+ ## 2017-2020
+  
 | 书名                                                                                                                                                                                                                             |  进度  | 计划开始时间 | 最后阅读时间 | 阅读者    |   状态    |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----: | :----------: | :----------: | :-------- | :-------: |
 | [《Git权威指南》](https://www.amazon.cn/dp/B009WMC3QQ/ref=sr_1_1?ie=UTF8&qid=1545199166&sr=8-1&keywords=git%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97)                                                                                 |  62%   |  2017-1-10   |  2017-2-14   | C.y.      | √结束阅读 |
@@ -26,11 +39,9 @@
 | [《Learning Unreal Engine Game Development》](https://www.amazon.cn/dp/B01956B5PS/ref=sr_1_1?ie=UTF8&qid=1545199383&sr=8-1&keywords=Learning+Unreal+Engine+Game+Development)                                                     | 100.0% |  2018-06-30  |  2018-07-10  | C.y.      | √完成阅读 |
 | [《Blueprints Visual Scripting for Unreal Engine》](https://www.amazon.cn/dp/B00YSILVNA/ref=sr_1_2?ie=UTF8&qid=1545199401&sr=8-2&keywords=Blueprints+Visual+Scripting+for+Unreal+Engine)                                         | 100.0% |  2018-7-11   |  2018-7-15   | C.y.      | √完成阅读 |
 | [《游戏设计的236个技巧》](https://www.amazon.cn/dp/B017SDUYB6/ref=sr_1_1?ie=UTF8&qid=1545199335&sr=8-1&keywords=%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E7%9A%84236%E4%B8%AA%E6%8A%80%E5%B7%A7)                                     |  25%   |  2018-7-14   |   2018-8-3   | C.y.      | *暂停阅读 |
-| [《Effective C#》](https://www.amazon.cn/dp/B07D5952BF/ref=sr_1_1?ie=UTF8&qid=1545199348&sr=8-1&keywords=Effective+C%23)                                                                                                         |  25%   |  2018-07-02  |  2021-03-05  | C.y.      | -正在阅读 |
 | 《lua程序设计第四版》                                                                                                                                                                                                            |  100%  |  2020-07-10  |  2020-07-18  | C.y.      | √完成阅读 |
 | 《Clojure编程实战》                                                                                                                                                                                                              |  100%  |  2020-07-24  |  2020-08-28  | C.y.      | √完成阅读 |
 | [Modern C++ Tutorial: C++11/14/17/20 On the Fly](https://github.com/changkun/modern-cpp-tutorial)                                                                                                                                |  100%  |  2020-08-27  |  2021-01-05  | C.y.      | √完成阅读 |
-| [《深入理解计算机系统》](https://book.douban.com/subject/26912767/)                                                                                                                                                              |   8%   |  2021-08-04  |  2021-08-05  | C.y.      | 正在阅读  |
 | 《算法导论》                                                                                                                                                                                                                     |  42%   |  2017-1-17   |  2017-2-26   | liuchuang | *暂停阅读 |
 | [_500lines_][500lines]                                                                                                                                                                                                           |   7%   |  2017-1-10   |  2017-1-22   | liuchuang | *暂停阅读 |
 | 《Spring In Action 中文第四版》                                                                                                                                                                                                  |  45%   |  2017-1-12   |  2017-2-18   | BearSmall | 正在阅读  |
@@ -43,6 +54,7 @@
 | 《NodeJs教程》                                                                                                                                                                                                                   |  50%   |  2017-2-20   |  2017-2-21   | SmileHr   | 正在阅读  |
 | [_ANSI Common Lisp_][CommonLisp]                                                                                                                                                                                                 |  18%   |  2017-8-22   |  2017-08-23  | liuchuang | 正在阅读  |
 | [《ECMAScript 6 简介》][ECMAScript6-intro]                                                                                                                                                                                       |  100%  |  2018-04-16  |  2018-06-16  | liuchuang | √完成阅读 |
+</details>
 
 # 分类
 ## 算法
