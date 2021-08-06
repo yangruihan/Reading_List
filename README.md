@@ -17,6 +17,7 @@
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----: | :----------: | :----------: | :-------- | :-------: |
 | [《深入理解计算机系统》](https://book.douban.com/subject/26912767/)                                                                                                                                                              |   8%   |  2021-08-04  |  2021-08-05  | C.y.      | 正在阅读  |
 | [《Effective C#》](https://www.amazon.cn/dp/B07D5952BF/ref=sr_1_1?ie=UTF8&qid=1545199348&sr=8-1&keywords=Effective+C%23)                                                                                                         |  25%   |  2018-07-02  |  2021-03-05  | C.y.      | -正在阅读 |
+| [《Dive Into Python 3》](https://diveintopython3.problemsolving.io/)                                                                                                         |  0.1%   |  2021-08-06  |  2021-08-06  | csl     | -正在阅读 |
 
 <details>
   <summary>历史</summary>
@@ -76,6 +77,7 @@
 
 ## Python
 - [_500lines_][500lines] liuchuang
+- 《Dive Into Python 3》csl
 
 [500lines]:https://github.com/aosabook/500lines
 
