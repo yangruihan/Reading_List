@@ -1,0 +1,536 @@
+{
+    "root": {
+        "data": {
+            "id": "ce0p6vksf1c0",
+            "created": 1630717730938,
+            "text": "深入理解计算机系统"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "ce0p77hk5uo0",
+                    "created": 1630717756864,
+                    "text": "第一章 计算机系统漫游"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "ce0p80wzso00",
+                            "created": 1630717820924,
+                            "text": "计算机系统组成"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ce0p82zrll40",
+                                    "created": 1630717825445,
+                                    "text": "硬件"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "ce0p84njx340",
+                                    "created": 1630717829060,
+                                    "text": "系统软件"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ce0p9j24afc0",
+                            "created": 1630717938780,
+                            "text": "信息"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ce0pa5ogfts0",
+                                    "created": 1630717988020,
+                                    "text": "组成",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0p9kju1vs0",
+                                            "created": 1630717942028,
+                                            "text": "位"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0p9m9mw5k0",
+                                            "created": 1630717945765,
+                                            "text": "上下文"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ce0pabarlt40",
+                                    "created": 1630718000253,
+                                    "text": "对象"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0pakx8ykg0",
+                                            "created": 1630718021203,
+                                            "text": "磁盘文件"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0panpthg80",
+                                            "created": 1630718027284,
+                                            "text": "内存中的程序"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pavjca340",
+                                            "created": 1630718044307,
+                                            "text": "内存中存放的用户数据"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pb1ce4dc0",
+                                            "created": 1630718056947,
+                                            "text": "网上传输的数据"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ce0pc09xq740",
+                            "created": 1630718132986,
+                            "text": "编译系统"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ce0pc4ley0o0",
+                                    "created": 1630718142387,
+                                    "text": "阶段"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0pc86j1ao0",
+                                            "created": 1630718150194,
+                                            "text": "预处理阶段"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pcdzphso0",
+                                            "created": 1630718162843,
+                                            "text": "编译阶段"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pchnmp5s0",
+                                            "created": 1630718170819,
+                                            "text": "汇编阶段"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pcizm6940",
+                                            "created": 1630718173721,
+                                            "text": "链接阶段"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ce0peujq6s00",
+                                    "created": 1630718355610,
+                                    "text": "理解的优势"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0pf2ksqsw0",
+                                            "created": 1630718373089,
+                                            "text": "优化程序性能"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pf54ydkw0",
+                                            "created": 1630718378661,
+                                            "text": "理解链接时发生的错误"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pfcmne6o0",
+                                            "created": 1630718394969,
+                                            "text": "避免安全漏洞"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ce0pg0ly2c00",
+                            "created": 1630718447169,
+                            "text": "硬件组成"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ce0pg5he1q80",
+                                    "created": 1630718457777,
+                                    "text": "总线"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0ph3nyltk0",
+                                            "created": 1630718532185,
+                                            "text": "贯穿整个系统，携带信息并在各个设备中传递"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ce0pg74aslk0",
+                                    "created": 1630718461339,
+                                    "text": "I/O设备"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0php9huc80",
+                                            "created": 1630718579200,
+                                            "text": "用户输入，键盘和鼠标"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0phw0hkxs0",
+                                            "created": 1630718593893,
+                                            "text": "用户输出，显示器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pi38ep6w0",
+                                            "created": 1630718609609,
+                                            "text": "长期存储，硬盘"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ce0pgd5r9fk0",
+                                    "created": 1630718474488,
+                                    "text": "主存"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0piub7peo0",
+                                            "created": 1630718668552,
+                                            "text": "临时存储设备，存放数据和程序"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ce0pgeo64xs0",
+                                    "created": 1630718477778,
+                                    "text": "处理器"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0pj7ud59c0",
+                                            "created": 1630718698008,
+                                            "text": "解释或执行存储在主存中指令的引擎"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pl92xli80",
+                                            "created": 1630718857431,
+                                            "text": "操作"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ce0pld08huo0",
+                                                    "created": 1630718865975,
+                                                    "text": "加载"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0plriaau80",
+                                                            "created": 1630718897542,
+                                                            "text": "从主存加载数据到寄存器"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "ce0plemqatc0",
+                                                    "created": 1630718869512,
+                                                    "text": "存储"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0plyaesk80",
+                                                            "created": 1630718912303,
+                                                            "text": "将数据从寄存器保存到主存"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "ce0plhibxt40",
+                                                    "created": 1630718875776,
+                                                    "text": "操作"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0pm97v6pk0",
+                                                            "created": 1630718936094,
+                                                            "text": "将寄存器数据加载到ALU，计算后保存至寄存器"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "ce0plige7g80",
+                                                    "created": 1630718877837,
+                                                    "text": "跳转"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0pmitzok80",
+                                                            "created": 1630718957022,
+                                                            "text": "从指令中将跳转目标覆盖到PC"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pn8gac740",
+                                            "created": 1630719012790,
+                                            "text": "实现"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "ce0pnh1lmkw0",
+                                                    "created": 1630719031493,
+                                                    "text": "指令集架构"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0pnra7ao80",
+                                                            "created": 1630719053782,
+                                                            "text": "描述每条机器代码指令的效果"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "ce0pnizgz340",
+                                                    "created": 1630719035718,
+                                                    "text": "微体系结构"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0po2t4cg00",
+                                                            "created": 1630719078870,
+                                                            "text": "处理器具体实现"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ce0pp1tuwog0",
+                            "created": 1630719155102,
+                            "text": "存储设备层次结构"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ce0ppl85le80",
+                                    "created": 1630719197325,
+                                    "text": "多层高速缓存"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0pqby4q3k0",
+                                            "created": 1630719255492,
+                                            "text": "L0 寄存器"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pqevbmo00",
+                                            "created": 1630719261852,
+                                            "text": "L1 高速缓存（SRAM） "
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pqnihbwo0",
+                                            "created": 1630719280667,
+                                            "text": "L2 高速缓存（SRAM） "
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pqs1o09k0",
+                                            "created": 1630719290534,
+                                            "text": "L3 高速缓存（SRAM） "
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pqxfaoo00",
+                                            "created": 1630719302242,
+                                            "text": "主存 （DRAM）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0pr4yz6bk0",
+                                            "created": 1630719318670,
+                                            "text": "本地二级存储（本地硬盘）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0prn2gi1c0",
+                                            "created": 1630719358062,
+                                            "text": "远端二级存储（服务器、云盘）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "ce0ppwn8b680",
+                                    "created": 1630719222181,
+                                    "text": "上一层的存储器作为低一层存储器的高速缓存"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "ce0psgcce740",
+                            "created": 1630719421787,
+                            "text": "操作系统"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "ce0psivno2o0",
+                                    "created": 1630719427308,
+                                    "text": "基本功能"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "ce0psmrcr400",
+                                            "created": 1630719435755,
+                                            "text": "防止硬件被失控的应用程序滥用"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "ce0psxs9v680",
+                                            "created": 1630719459755,
+                                            "text": "向应用程序提供简单一致的机制来控制底层设备"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
