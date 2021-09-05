@@ -533,18 +533,79 @@
                                 "children": [
                                     {
                                         "data": {
-                                            "id": "ce0q6go8vhk0",
-                                            "created": 1630720519605,
-                                            "text": "文件"
+                                            "id": "ce0q6oge73k0",
+                                            "created": 1630720536544,
+                                            "text": "进程"
                                         },
                                         "children": [
                                             {
                                                 "data": {
-                                                    "id": "ce0q6qgga8o0",
-                                                    "created": 1630720540901,
-                                                    "text": "对I/O设备的抽象"
+                                                    "id": "ce0q88ukgpk0",
+                                                    "created": 1630720659301,
+                                                    "text": "对处理器、主存、I/O设备的抽象",
+                                                    "expandState": "expand"
                                                 },
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0v61h2z6o0",
+                                                            "created": 1630734592069,
+                                                            "text": "对一个正在运行的程序的一种抽象"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0vauzkd0g0",
+                                                            "created": 1630734969770,
+                                                            "text": "并发运行"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "ce0vay5hbk00",
+                                                                    "created": 1630734976658,
+                                                                    "text": "一个进程的指令和另一个进程的指令是交错执行的"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0vcre4zlk0",
+                                                            "created": 1630735118673,
+                                                            "text": "上下文"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "ce0vcvnvi000",
+                                                                    "created": 1630735127969,
+                                                                    "text": "PC、寄存器值和主存内容"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0vd8jls2o0",
+                                                            "created": 1630735156009,
+                                                            "text": "上下文切换"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "ce0vdaoc4q80",
+                                                                    "created": 1630735160649,
+                                                                    "text": "把控制权从当前进程转移到某个新进程"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -559,163 +620,87 @@
                                                 "data": {
                                                     "id": "ce0q70gksdc0",
                                                     "created": 1630720562677,
-                                                    "text": "对主存和磁盘I/O设备的抽象"
+                                                    "text": "对主存和磁盘I/O设备的抽象",
+                                                    "expandState": "expand"
                                                 },
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0vgwo8e2g0",
+                                                            "created": 1630735443624,
+                                                            "text": "为每个进程提供一个假象，每个进程都在独占地使用主存"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "ce0vhk8bje80",
+                                                            "created": 1630735494904,
+                                                            "text": "分区（由低到高）"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "ce0vhn2b2hs0",
+                                                                    "created": 1630735501071,
+                                                                    "text": "程序代码和数据"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "ce0vispgjt40",
+                                                                    "created": 1630735591719,
+                                                                    "text": "堆"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "ce0vj787kp40",
+                                                                    "created": 1630735623328,
+                                                                    "text": "共享库"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "ce0vjk9v0000",
+                                                                    "created": 1630735651726,
+                                                                    "text": "栈"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "ce0vjpz764o0",
+                                                                    "created": 1630735664142,
+                                                                    "text": "内核虚拟内存"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
                                     {
                                         "data": {
-                                            "id": "ce0q6oge73k0",
-                                            "created": 1630720536544,
-                                            "text": "进程"
+                                            "id": "ce0q6go8vhk0",
+                                            "created": 1630720519605,
+                                            "text": "文件"
                                         },
                                         "children": [
                                             {
                                                 "data": {
-                                                    "id": "ce0q88ukgpk0",
-                                                    "created": 1630720659301,
-                                                    "text": "对处理器、主存、I/O设备的抽象"
+                                                    "id": "ce0q6qgga8o0",
+                                                    "created": 1630720540901,
+                                                    "text": "对I/O设备的抽象"
                                                 },
                                                 "children": []
                                             }
                                         ]
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "data": {
-                            "id": "ce0v9jphekg0",
-                            "created": 1630734866852,
-                            "text": "进程",
-                            "expandState": "expand"
-                        },
-                        "children": [
-                            {
-                                "data": {
-                                    "id": "ce0v61h2z6o0",
-                                    "created": 1630734592069,
-                                    "text": "对一个正在运行的程序的一种抽象"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "ce0vauzkd0g0",
-                                    "created": 1630734969770,
-                                    "text": "并发运行"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "ce0vay5hbk00",
-                                            "created": 1630734976658,
-                                            "text": "一个进程的指令和另一个进程的指令是交错执行的"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "ce0vcre4zlk0",
-                                    "created": 1630735118673,
-                                    "text": "上下文"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "ce0vcvnvi000",
-                                            "created": 1630735127969,
-                                            "text": "PC、寄存器值和主存内容"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "data": {
-                                    "id": "ce0vd8jls2o0",
-                                    "created": 1630735156009,
-                                    "text": "上下文切换"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "ce0vdaoc4q80",
-                                            "created": 1630735160649,
-                                            "text": "把控制权从当前进程转移到某个新进程"
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "data": {
-                            "id": "ce0vgp4m4ao0",
-                            "created": 1630735427200,
-                            "text": "虚拟内存"
-                        },
-                        "children": [
-                            {
-                                "data": {
-                                    "id": "ce0vgwo8e2g0",
-                                    "created": 1630735443624,
-                                    "text": "为每个进程提供一个假象，每个进程都在独占地使用主存"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "ce0vhk8bje80",
-                                    "created": 1630735494904,
-                                    "text": "分区（由低到高）"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "ce0vhn2b2hs0",
-                                            "created": 1630735501071,
-                                            "text": "程序代码和数据"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "ce0vispgjt40",
-                                            "created": 1630735591719,
-                                            "text": "堆"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "ce0vj787kp40",
-                                            "created": 1630735623328,
-                                            "text": "共享库"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "ce0vjk9v0000",
-                                            "created": 1630735651726,
-                                            "text": "栈"
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "ce0vjpz764o0",
-                                            "created": 1630735664142,
-                                            "text": "内核虚拟内存"
-                                        },
-                                        "children": []
                                     }
                                 ]
                             }
