@@ -33,6 +33,7 @@ int main() {
     uint32_t x3 = x | 0xff;
     printf("x3=%#010X\n", x3);
 
+    EXE_LABEL("2.13");
     uint8_t a1 = 0b00110010;
     uint8_t a2 = 0b10010001;
     printf("a1=%0x\n", bool_or(a1, a2));
