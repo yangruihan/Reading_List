@@ -15,7 +15,7 @@
 
 | 书名                                                                                                                                                                                                                             |  进度  | 计划开始时间 | 最后阅读时间 | 阅读者    |   状态    |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----: | :----------: | :----------: | :-------- | :-------: |
-| [《The Rust Programming Language》](https://doc.rust-lang.org/stable/book/)                                                                                                                                                              |   97%   |  2021-09-10  |  2021-10-14  | C.y.      | 正在阅读  |
+| [《The Rust Programming Language》](https://doc.rust-lang.org/stable/book/)                                                                                                                                                              |   100%   |  2021-09-10  |  2021-10-15  | C.y.      | 正在阅读  |
 | [《深入理解计算机系统》](https://book.douban.com/subject/26912767/)                                                                                                                                                              |   18%   |  2021-08-04  |  2021-09-01  | C.y.      | 正在阅读  |
 | [《Effective C#》](https://www.amazon.cn/dp/B07D5952BF/ref=sr_1_1?ie=UTF8&qid=1545199348&sr=8-1&keywords=Effective+C%23)                                                                                                         |  25%   |  2018-07-02  |  2021-03-05  | C.y.      | -正在阅读 |
 | [《Dive Into Python 3》](https://diveintopython3.problemsolving.io/)                                                                                                         |  0.1%   |  2021-08-06  |  2021-08-06  | csl     | -正在阅读 |
@@ -100,6 +100,10 @@
 
 ## Lua
 - 《lua程序设计第四版》 C.y.
+
+## Rust
+
+- [《The Rust Programming Language》](https://doc.rust-lang.org/stable/book/)：https://github.com/yangruihan/rust_study-1
 
 [CommonLisp]: https://acl.readthedocs.io/en/latest/zhCN
 [ECMAScript6-intro]: http://es6.ruanyifeng.com/#docs/intro
