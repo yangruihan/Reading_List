@@ -20,7 +20,7 @@
 | :- | :-: | :-: | :-: | :- | :-: |
 | [《Unix 编程艺术》](https://book.douban.com/subject/1467587/) | 24% | 2021-10-22 | 2021-10-28 | ryan | -正在阅读 |
 | [《The Rust Programming Language》](https://doc.rust-lang.org/stable/book/) | 100% | 2021-09-10 | 2021-10-15 | ryan | √完成阅读 |
-| [《深入浅出Rust》](https://www.amazon.cn/dp/B07GSRFG28) | 70.1% | 2021-11-28 | 2022-01-12 | ryan | -正在阅读 |
+| [《深入浅出Rust》](https://www.amazon.cn/dp/B07GSRFG28) | 79.1% | 2021-11-28 | 2022-01-26 | ryan | -正在阅读 |
 | [《深入理解计算机系统》](https://book.douban.com/subject/26912767/) | 21.5% | 2021-08-04 | 2021-10-21 | ryan | -正在阅读 |
 | [《Effective C#》](https://www.amazon.cn/dp/B07D5952BF/ref=sr_1_1?ie=UTF8&qid=1545199348&sr=8-1&keywords=Effective+C%23) | 25% | 2018-07-02 | 2021-03-05 | ryan | -正在阅读 |
 | [《Dive Into Python 3》](https://diveintopython3.problemsolving.io/) | 0.1% | 2021-08-06 | 2021-08-06 | csl | -正在阅读 |
