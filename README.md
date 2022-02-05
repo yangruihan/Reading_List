@@ -13,13 +13,27 @@
 
 # 阅读计划
 
+## 2022
+
+
+| 书名 | 进度 | 计划开始时间 | 最后阅读时间 | 阅读者 | 状态 |
+| :- | :-: | :-: | :-: | :- | :-: |
+| [《Unix 编程艺术》](https://book.douban.com/subject/1467587/) | 24% | 2021-10-22 | 2021-10-28 | ryan | -正在阅读 |
+| [《游戏引擎架构》](https://www.amazon.cn/dp/B00HY8SIX2/ref=sr_1_1?ie=UTF8&qid=1545199235&sr=8-1&keywords=%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%9E%B6%E6%9E%84) | 9.2% | 2022-01-31 | 2022-02-05 | ryan | -正在阅读（二周目） |
+| [《深入理解计算机系统》](https://book.douban.com/subject/26912767/) | 21.5% | 2021-08-04 | 2021-10-21 | ryan | -正在阅读 |
+
+
+<details>
+  <summary>历史</summary>
+
+
 ## 2021
 
 
 | 书名 | 进度 | 计划开始时间 | 最后阅读时间 | 阅读者 | 状态 |
 | :- | :-: | :-: | :-: | :- | :-: |
 | [《Unix 编程艺术》](https://book.douban.com/subject/1467587/) | 24% | 2021-10-22 | 2021-10-28 | ryan | -正在阅读 |
-| [《游戏引擎架构》](https://www.amazon.cn/dp/B00HY8SIX2/ref=sr_1_1?ie=UTF8&qid=1545199235&sr=8-1&keywords=%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%9E%B6%E6%9E%84) | 8.5% | 2022-01-31 | 2022-02-04 | ryan | -正在阅读（二周目） |
+| [《游戏引擎架构》](https://www.amazon.cn/dp/B00HY8SIX2/ref=sr_1_1?ie=UTF8&qid=1545199235&sr=8-1&keywords=%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%9E%B6%E6%9E%84) | 9.2% | 2022-01-31 | 2022-02-05 | ryan | -正在阅读（二周目） |
 | [《The Rust Programming Language》](https://doc.rust-lang.org/stable/book/) | 100% | 2021-09-10 | 2021-10-15 | ryan | √完成阅读 |
 | [《深入浅出Rust》](https://www.amazon.cn/dp/B07GSRFG28) | 100% | 2021-11-28 | 2022-01-29 | ryan | √完成阅读 |
 | [《深入理解计算机系统》](https://book.douban.com/subject/26912767/) | 21.5% | 2021-08-04 | 2021-10-21 | ryan | -正在阅读 |
@@ -27,8 +41,6 @@
 | [《Dive Into Python 3》](https://diveintopython3.problemsolving.io/) | 0.1% | 2021-08-06 | 2021-08-06 | csl | -正在阅读 |
 | 《Java核心技术 卷1》 | 100% | 2021-10-25 | 2021-12-17 | liuchuang | √完成阅读 |
 
-<details>
-  <summary>历史</summary>
 
 ## 2017-2020
 
