@@ -89,6 +89,11 @@
 
 - 《编译原理》 C.y.
 
+## 通用
+
+- 《深入理解计算机系统》
+- 《Unix 编程艺术》
+
 ## C/C++
 
 - 《C++ Primer（英文第五版）》 C.y.
@@ -132,6 +137,7 @@
 ## Lisp
 
 - [_ANSI Common Lisp_][CommonLisp] liuchuang
+- [CommonLisp](https://acl.readthedocs.io/en/latest/zhCN)
 
 ## Lua
 
@@ -142,7 +148,7 @@
 - [《The Rust Programming Language》](https://doc.rust-lang.org/stable/book/)：https://github.com/yangruihan/rust_study-1
 - [《深入浅出Rust》](https://www.amazon.cn/dp/B07GSRFG28)
 
-[CommonLisp]: https://acl.readthedocs.io/en/latest/zhCN
+## 其他
+
 [ECMAScript6-intro]: http://es6.ruanyifeng.com/#docs/intro
-[500lines]: https://github.com/aosabook/500lines
 [dp3]: https://diveintopython3.problemsolving.io/
